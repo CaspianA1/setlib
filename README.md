@@ -1,4 +1,4 @@
-## setlib is a little C library intended for common set operations.
+## setlib is a C library for operating on sets.
 
 - To see an example of how to use the library, check out `example.c`.
 - Here are the available functions:

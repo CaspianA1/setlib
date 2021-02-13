@@ -136,24 +136,3 @@ void* _set_foldl(void* (*f) (void*, void*), void* seed, void** elems, int length
 	if (length == 0) return seed;
 	return _set_foldl(f, f(seed, elems[0]), elems + 1, length - 1);
 }
-
-/*
-void* sub(void* x, void* y) {return (void*) ((int) x - (int) y);}
-
-
-int main() {
-	Set* s = set_init(3, 1, 2, 3);
-	printf("%d\n", (int) set_foldr(sub, s, 0)); // -2
-	printf("%d\n", (int) set_foldl(sub, s, 0)); // -6
-	set_delete(s);
-}
-*/
-
-/*
-set_print, set_contains, list_contains, 
-set_of_list, set_init, set_delete,
-set_remove, set_clear, set_union,
-set_intersection, set_difference,
-set_is_subset, sets_equal,
-set_map, set_filter, set_foldr, set_foldl
-*/
